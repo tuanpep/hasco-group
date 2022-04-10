@@ -1,11 +1,78 @@
 import * as React from "react";
+import styled from "styled-components";
+import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export interface IHighlightsProps {}
 
+const HighlightsContainer = styled.div`
+  width: 100%;
+  padding: 30px 0;
+  background-color: #ffffff;
+  color: #000;
+  font-family: "Roboto Slab", sans-serif;
+  padding-top: 50px;
+`;
+
+const HighLightContent = styled.div`
+  width: 1200px;
+  margin: 0 auto;
+
+  h2.title {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+
+  h4.sub-title {
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 20px 0 0 20px;
+    text-transform: uppercase;
+  }
+`;
+
+const SwiperContainer = styled.div`
+  width: 100%;
+`;
+
+const HighLightItem = styled.div`
+  width: 350px;
+  height: 350px;
+  border: 1px solid #000;
+`;
+
 export function Highlights(props: IHighlightsProps) {
   return (
-    <div>
-      <h2>Highlights</h2>
-    </div>
+    <HighlightsContainer>
+      <HighLightContent>
+        <h2 className="title">THÀNH PHỐ QUY HOẠCH THÔNG MINH</h2>
+
+        <h4 className="sub-title">– Khu tiện ích tích hợp đầy đủ</h4>
+      </HighLightContent>
+
+      <SwiperContainer>
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={50}
+          slidesPerView={2}
+          navigation
+          pagination={{ clickable: true }}
+          scrollbar={{ draggable: true }}
+        >
+          {[1, 2, 3, 4, 5].map((item, index) => (
+            <SwiperSlide>
+              <HighLightItem>{item}</HighLightItem>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </SwiperContainer>
+    </HighlightsContainer>
   );
 }

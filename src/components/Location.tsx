@@ -78,7 +78,7 @@ export function Location(props: ILocationProps) {
     <LocationContainer>
       <LocationContent>
         <div className="right-column">
-          <img src={getGdriverImage(ImageData.overview.img2)} alt="" />
+          <img src={getGdriverImage(ImageData.location)} alt="" />
         </div>
 
         <div className="left-column">
@@ -86,13 +86,15 @@ export function Location(props: ILocationProps) {
 
           <div className="explain-box">
             <p>
-              Tại Vinhomes Smart City, chúng tôi mong muốn mang đến cho bạn một
-              nơi tận hưởng cuộc sống sang trọng, đẳng cấp, một đại đô thị thông
-              minh đầu tiên tại Việt Nam.
+              Tại Hasco City, chúng tôi mong muốn mang đến cho bạn một nơi tận
+              hưởng cuộc sống sang trọng, đẳng cấp, một đại đô thị thông minh
+              đầu tiên tại Việt Nam.
             </p>
 
             <div className="explain-btn">
-              <button>Bản đồ chi tiết</button>
+              <a href="https://goo.gl/maps/gUj2J6eBm5StW7Em8" target="_blank">
+                <button>Bản đồ chi tiết</button>
+              </a>
             </div>
           </div>
         </div>

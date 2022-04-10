@@ -12,7 +12,7 @@ const HeaderContainer = styled.div`
 const HeaderContent = styled.div`
   width: 1440px;
   margin: 0 auto;
-  height: 70px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,8 +24,8 @@ const Logo = styled.img`
 
 const MenuContainer = styled.div`
   display: flex;
-  width: 70%;
-  justify-content: flex-start;
+  width: 50%;
+  justify-content: center;
 `;
 
 const MenuItem = styled.div`
@@ -61,6 +61,22 @@ const MenuItem = styled.div`
   }
 `;
 
+const ButtonContainer = styled.div`
+  width: 25%;
+
+  button {
+    background-color: #000;
+    outline: 0;
+    color: #fff;
+    border: 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-family: "Roboto Slab", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+`;
+
 const menuList = [
   {
     name: "Tổng quan",
@@ -89,6 +105,10 @@ export function Header(props: IHeaderProps) {
             <MenuItem key={index}>{item.name}</MenuItem>
           ))}
         </MenuContainer>
+
+        <ButtonContainer>
+          <button>Đăng ký tư vấn </button>
+        </ButtonContainer>
       </HeaderContent>
     </HeaderContainer>
   );

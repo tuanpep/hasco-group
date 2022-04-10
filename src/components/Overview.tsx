@@ -84,9 +84,9 @@ export function Overview(props: IOverviewProps) {
 
           <div className="explain-box">
             <p>
-              Tại Vinhomes Smart City, chúng tôi mong muốn mang đến cho bạn một
-              nơi tận hưởng cuộc sống sang trọng, đẳng cấp, một đại đô thị thông
-              minh đầu tiên tại Việt Nam.
+              Tại Hasco City, chúng tôi mong muốn mang đến cho bạn một nơi tận
+              hưởng cuộc sống sang trọng, đẳng cấp, một đại đô thị thông minh
+              đầu tiên tại Việt Nam.
             </p>
 
             <div className="explain-btn">
