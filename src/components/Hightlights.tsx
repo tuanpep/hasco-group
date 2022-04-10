@@ -16,6 +16,10 @@ const HighlightsContainer = styled.div`
   color: #000;
   font-family: "Roboto Slab", sans-serif;
   padding-top: 50px;
+
+  .swiper-container {
+    max-width: 1200px;
+  }
 `;
 
 const HighLightContent = styled.div`
@@ -37,12 +41,8 @@ const HighLightContent = styled.div`
   }
 `;
 
-const SwiperContainer = styled.div`
-  width: 100%;
-`;
-
 const HighLightItem = styled.div`
-  width: 350px;
+  width: 100%;
   height: 350px;
   border: 1px solid #000;
 `;
@@ -56,23 +56,20 @@ export function Highlights(props: IHighlightsProps) {
         <h4 className="sub-title">– Khu tiện ích tích hợp đầy đủ</h4>
       </HighLightContent>
 
-      <SwiperContainer>
-        <Swiper
-          // install Swiper modules
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={50}
-          slidesPerView={2}
-          navigation
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-        >
-          {[1, 2, 3, 4, 5].map((item, index) => (
-            <SwiperSlide>
-              <HighLightItem>{item}</HighLightItem>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </SwiperContainer>
+      <Swiper
+        // install Swiper modules
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={30}
+        slidesPerView={2}
+        pagination={{ clickable: true }}
+        className="swiper-container"
+      >
+        {[1, 2, 3, 4, 5].map((item, index) => (
+          <SwiperSlide>
+            <HighLightItem>{item}</HighLightItem>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </HighlightsContainer>
   );
 }
