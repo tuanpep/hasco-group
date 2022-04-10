@@ -22,4 +22,9 @@ export const ImageData = {
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Placeat ex sit quod distinctio laboriosam hic quos iustonesciunt facere voluptatibus, odit veritatis voluptas dolorum culpa obcaecati, amet a sed eligendi.",
     },
   ],
+
+  overview: {
+    img1: "19ezKDCq6HC-yZ2stu3GhRQ9Ps_7iSsNU",
+    img2: "1aVGkQOj4vnUX28tM0AzSqwO1f7M3_xkt",
+  },
 };
