@@ -13,11 +13,11 @@ export interface IHighlightsProps {}
 
 const HighlightsContainer = styled.div`
   width: 100%;
-  margin: 30px 0;
+  padding: 30px 0;
   background-color: #ffffff;
   color: #000;
   font-family: "Roboto Slab", sans-serif;
-  margin-top: 50px;
+  padding-top: 50px;
 
   .swiper-container {
     max-width: 1440px;
