@@ -32,11 +32,14 @@ const ApartmentContent = styled.div`
 `;
 
 const ApartmentItem = styled.div`
-  background-image: ${(props: { image: string }) => `url(${props.image})`};
   background-size: cover;
-  width: 80%;
-  height: 620px;
   margin: 0 auto;
+  width: 80%;
+
+  img {
+    width: 100%;
+    max-height: 700px;
+  }
 `;
 
 export function Apartment(props: IApartmentProps) {
@@ -57,7 +60,9 @@ export function Apartment(props: IApartmentProps) {
           {ImageData.apartment.map((data, index) => {
             return (
               <SwiperSlide>
-                <ApartmentItem image={getGdriverImage(data)}></ApartmentItem>
+                <ApartmentItem >
+                  <img src={getGdriverImage(data)} alt="" />
+                </ApartmentItem>
               </SwiperSlide>
             );
           })}
