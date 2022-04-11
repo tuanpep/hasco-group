@@ -19,7 +19,7 @@ const ApartmentContainer = styled.div`
 `;
 
 const ApartmentContent = styled.div`
-  width: 1200px;
+  width: 1440px;
   margin: 0 auto;
 
   h2.head-title {

@@ -15,7 +15,7 @@ const LocationContainer = styled.div`
 
 const LocationContent = styled.div`
   z-index: 999;
-  width: 1200px;
+  width: 1440px;
   margin: 0 auto;
   display: flex;
   align-items: center;

@@ -15,7 +15,7 @@ const OverviewContainer = styled.div`
 
 const OverviewContent = styled.div`
   z-index: 999;
-  width: 1200px;
+  width: 1440px;
   margin: 0 auto;
   display: flex;
   align-items: center;
