@@ -13,11 +13,11 @@ export interface IHighlightsProps {}
 
 const HighlightsContainer = styled.div`
   width: 100%;
-  padding: 30px 0;
+  margin: 30px 0;
   background-color: #ffffff;
   color: #000;
   font-family: "Roboto Slab", sans-serif;
-  padding-top: 50px;
+  margin-top: 50px;
 
   .swiper-container {
     max-width: 1440px;
@@ -74,7 +74,7 @@ const HighLightItemDesc = styled.div`
 
 export function Highlights(props: IHighlightsProps) {
   return (
-    <HighlightsContainer>
+    <HighlightsContainer id="highlights">
       <HighLightContent>
         <h2 className="title">THÀNH PHỐ QUY HOẠCH THÔNG MINH</h2>
 

@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Autoplay, EffectFade, Virtual } from "swiper";
-import { ImageData } from "../data/images";
+import { Navigation, Virtual } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
-import "swiper/css/effect-fade";
+import "swiper/css/navigation";
 import "swiper/css/virtual";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { ImageData } from "../data/images";
 import { getGdriverImage } from "../helpers/getGdiverImage";
 
 export interface IApartmentProps {}
@@ -43,24 +43,22 @@ const ApartmentItem = styled.div`
 `;
 
 export function Apartment(props: IApartmentProps) {
-  SwiperCore.use([Autoplay, EffectFade]);
   return (
-    <ApartmentContainer>
+    <ApartmentContainer id="apartment">
       <ApartmentContent>
         <h2 className="head-title">Thiết kế căn hộ tiện ích</h2>
 
         <Swiper
           slidesPerView={1}
-          modules={[Virtual, Autoplay, EffectFade]}
-          autoplay={{ delay: 10000, disableOnInteraction: false }}
+          modules={[Virtual, Navigation]}
           virtual
-          loop={true}
           effect="fade"
+          navigation
         >
           {ImageData.apartment.map((data, index) => {
             return (
               <SwiperSlide>
-                <ApartmentItem >
+                <ApartmentItem>
                   <img src={getGdriverImage(data)} alt="" />
                 </ApartmentItem>
               </SwiperSlide>
