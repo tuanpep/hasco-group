@@ -17,7 +17,7 @@ const CarouselContainer = styled.div`
 
 const SliderItemContainer = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   background-image: ${(props: { image: string }) => `url(${props.image})`};
   background-size: cover;
   background-repeat: no-repeat;

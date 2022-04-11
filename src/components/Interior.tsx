@@ -4,7 +4,7 @@ export interface IInteriorProps {}
 
 export function Interior(props: IInteriorProps) {
   return (
-    <div>
+    <div id="interior">
       <h2>Interior</h2>
     </div>
   );

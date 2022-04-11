@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-scroll";
 import styled from "styled-components";
 
 export interface IHeaderProps {}
@@ -82,18 +83,23 @@ const ButtonContainer = styled.div`
 const menuList = [
   {
     name: "Tổng quan",
+    id: "overview",
   },
   {
     name: "Vị trí",
+    id: "location",
   },
   {
     name: "Điểm nhấn",
+    id: "highlights",
   },
   {
     name: "Căn Hộ",
+    id: "apartment",
   },
   {
     name: "Nội thất",
+    id: "interior",
   },
 ];
 
@@ -104,7 +110,9 @@ export function Header(props: IHeaderProps) {
         <Logo src="/logo-hasco.png" />
         <MenuContainer>
           {menuList.map((item, index) => (
-            <MenuItem key={index}>{item.name}</MenuItem>
+            <Link to={item.id} spy={true} smooth={true}>
+              <MenuItem key={index}>{item.name}</MenuItem>
+            </Link>
           ))}
         </MenuContainer>
 

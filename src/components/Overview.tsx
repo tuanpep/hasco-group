@@ -77,7 +77,7 @@ const OverviewContent = styled.div`
 
 export function Overview(props: IOverviewProps) {
   return (
-    <OverviewContainer>
+    <OverviewContainer id="overview">
       <OverviewContent>
         <div className="left-column">
           <h2>– HASCO CITY - Thành phố quốc tế của những công dân toàn cầu</h2>

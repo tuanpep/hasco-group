@@ -74,7 +74,7 @@ const HighLightItemDesc = styled.div`
 
 export function Highlights(props: IHighlightsProps) {
   return (
-    <HighlightsContainer>
+    <HighlightsContainer id="highlights">
       <HighLightContent>
         <h2 className="title">THÀNH PHỐ QUY HOẠCH THÔNG MINH</h2>
 

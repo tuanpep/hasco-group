@@ -74,7 +74,7 @@ const LocationContent = styled.div`
 
 export function Location(props: ILocationProps) {
   return (
-    <LocationContainer>
+    <LocationContainer id="location">
       <LocationContent>
         <div className="right-column">
           <img src={getGdriverImage(ImageData.location)} alt="" />
