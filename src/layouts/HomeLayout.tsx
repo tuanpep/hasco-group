@@ -5,7 +5,9 @@ import { Header } from "../components/Header";
 
 export interface IHomeLayoutProps {}
 
-const HomeLayoutContainer = styled.div``;
+const HomeLayoutContainer = styled.div`
+  position: relative;
+`;
 
 const HomeContent = styled.div``;
 

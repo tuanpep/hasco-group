@@ -7,7 +7,7 @@ export interface IOverviewProps {}
 
 const OverviewContainer = styled.div`
   width: 100%;
-  padding: 30px 0;
+  padding: 100px 0;
   background-color: #151515;
   color: #fdfcfc;
   font-family: "Roboto Slab", sans-serif;
@@ -15,7 +15,7 @@ const OverviewContainer = styled.div`
 
 const OverviewContent = styled.div`
   z-index: 999;
-  width: 1200px;
+  width: 1440px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -84,9 +84,9 @@ export function Overview(props: IOverviewProps) {
 
           <div className="explain-box">
             <p>
-              Tại Vinhomes Smart City, chúng tôi mong muốn mang đến cho bạn một
-              nơi tận hưởng cuộc sống sang trọng, đẳng cấp, một đại đô thị thông
-              minh đầu tiên tại Việt Nam.
+              Tại Hasco City, chúng tôi mong muốn mang đến cho bạn một nơi tận
+              hưởng cuộc sống sang trọng, đẳng cấp, một đại đô thị thông minh
+              đầu tiên tại Việt Nam.
             </p>
 
             <div className="explain-btn">

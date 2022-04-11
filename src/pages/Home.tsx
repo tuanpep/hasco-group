@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Apartment } from "../components/Apartment";
 import { Highlights } from "../components/Hightlights";
 import { HomeCarousel } from "../components/HomeCarousel";
 import { Interior } from "../components/Interior";
@@ -14,6 +15,7 @@ export function Home(props: IHomeProps) {
       <Overview />
       <Location />
       <Highlights />
+      <Apartment />
       <Interior />
     </>
   );
