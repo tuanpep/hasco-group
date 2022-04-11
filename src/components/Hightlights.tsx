@@ -6,6 +6,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { ImageData } from "../data/images";
+import { getGdriverImage } from "../helpers/getGdiverImage";
 
 export interface IHighlightsProps {}
 
@@ -39,12 +41,35 @@ const HighLightContent = styled.div`
     padding: 20px 0 0 20px;
     text-transform: uppercase;
   }
+  margin-bottom: 20px;
 `;
 
 const HighLightItem = styled.div`
   width: 100%;
-  height: 350px;
-  border: 1px solid #000;
+  height: 250px;
+  background-image: ${(props: { image: string }) => `url(${props.image})`};
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  position: relative;
+`;
+
+const HighLightItemDesc = styled.div`
+  padding-bottom: 50px;
+  .title {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: "Roboto Slab", sans-serif;
+    color: #575757;
+  }
 `;
 
 export function Highlights(props: IHighlightsProps) {
@@ -60,13 +85,17 @@ export function Highlights(props: IHighlightsProps) {
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={30}
-        slidesPerView={2}
-        pagination={{ clickable: true }}
+        slidesPerView={3}
         className="swiper-container"
+        scrollbar={{ draggable: true }}
       >
-        {[1, 2, 3, 4, 5].map((item, index) => (
+        {ImageData.highlights.map((item, index) => (
           <SwiperSlide>
-            <HighLightItem>{item}</HighLightItem>
+            <HighLightItem image={getGdriverImage(item.url)}></HighLightItem>
+            <HighLightItemDesc>
+              <div className="title">{item.title}</div>
+              <p>{item.desc}</p>
+            </HighLightItemDesc>
           </SwiperSlide>
         ))}
       </Swiper>

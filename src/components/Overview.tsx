@@ -7,7 +7,7 @@ export interface IOverviewProps {}
 
 const OverviewContainer = styled.div`
   width: 100%;
-  padding: 30px 0;
+  padding: 100px 0;
   background-color: #151515;
   color: #fdfcfc;
   font-family: "Roboto Slab", sans-serif;

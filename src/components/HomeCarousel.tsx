@@ -21,6 +21,7 @@ const SliderItemContainer = styled.div`
   background-image: ${(props: { image: string }) => `url(${props.image})`};
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 60px;
 `;
 
 export function HomeCarousel(props: IOverviewProps) {

@@ -7,11 +7,10 @@ export interface ILocationProps {}
 
 const LocationContainer = styled.div`
   width: 100%;
-  padding: 30px 0;
+  padding: 80px 0;
   background-color: #ffffff;
   color: #000;
   font-family: "Roboto Slab", sans-serif;
-  padding-top: 50px;
 `;
 
 const LocationContent = styled.div`
