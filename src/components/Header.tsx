@@ -66,15 +66,21 @@ const ButtonContainer = styled.div`
   width: 25%;
 
   button {
-    background-color: #000;
+    background-color: #0f74ba;
     outline: 0;
     color: #fff;
     border: 0;
     padding: 10px 15px;
+    font-weight: bold;
     cursor: pointer;
     font-family: "Roboto Slab", sans-serif;
     text-transform: uppercase;
     font-weight: 500;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #25aae2;
+    }
   }
 `;
 

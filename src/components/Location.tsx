@@ -48,15 +48,21 @@ const LocationContent = styled.div`
         margin-top: 30px;
 
         button {
-          background-color: #000;
+          background-color: #0f74ba;
           outline: 0;
           color: #fff;
           border: 0;
           padding: 10px 15px;
+          font-weight: bold;
           cursor: pointer;
           font-family: "Roboto Slab", sans-serif;
           text-transform: uppercase;
           font-weight: 500;
+          transition: all 0.3s;
+
+          &:hover {
+            background-color: #25aae2;
+          }
         }
       }
     }
@@ -67,7 +73,7 @@ const LocationContent = styled.div`
 
     img {
       width: 100%;
-      box-shadow: rgba(126, 193, 131, 0.56) 0px 22px 70px 0px;
+      box-shadow: rgba(58, 58, 58, 0.56) 0px 22px 70px 0px;
     }
   }
 `;
@@ -81,7 +87,7 @@ export function Location(props: ILocationProps) {
         </div>
 
         <div className="left-column">
-          <h2>– Thành phố quốc tế sôi động phía Tây Hà Nội</h2>
+          <h2>– Thành phố quốc tế sôi động tại Quận 2 TP.Hồ Chí Minh</h2>
 
           <div className="explain-box">
             <p>

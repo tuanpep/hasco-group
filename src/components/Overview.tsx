@@ -1,15 +1,13 @@
 import * as React from "react";
 import ReactPlayer from "react-player/lazy";
 import styled from "styled-components";
-import { ImageData } from "../data/images";
-import { getGdriverImage } from "../helpers/getGdiverImage";
 
 export interface IOverviewProps {}
 
 const OverviewContainer = styled.div`
   width: 100%;
   padding: 100px 0;
-  background-color: #151515;
+  background-color: #0f74ba;
   color: #fdfcfc;
   font-family: "Roboto Slab", sans-serif;
 `;
@@ -97,11 +95,16 @@ export function Overview(props: IOverviewProps) {
         </div>
 
         <div className="right-column">
-          <iframe
+          {/* <iframe
             src="https://drive.google.com/file/d/1Pmz738Tl6CMzwVcgBCoVc5ETRifYLR_S/preview"
             width="100%"
             height={400}
-          ></iframe>
+          ></iframe> */}
+          <ReactPlayer
+            width={"100%"}
+            height={420}
+            url="https://www.youtube.com/watch?v=_qr2Gcnl5oc"
+          />
         </div>
       </OverviewContent>
     </OverviewContainer>

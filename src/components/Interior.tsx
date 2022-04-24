@@ -151,8 +151,7 @@ export function Interior(props: IInteriorProps) {
           <div className="desc">
             <Title>Không gian làm việc</Title>
             <Description>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              quaerat dolores debitis ipsa, tempora modi.
+              Không gian làm việc hiện đại mang lại nguồn cảm hứng
             </Description>
           </div>
         </div>
@@ -166,8 +165,8 @@ export function Interior(props: IInteriorProps) {
           <div className="desc">
             <Title>Không gian phòng ngủ</Title>
             <Description>
-              Những mẫu phòng ngủ của Nhà Xinh mang đến cảm giác ấm cúng, gần
-              gũi và thoải mái
+              Những mẫu phòng ngủ của HASCO mang đến cảm giác ấm cúng, gần gũi
+              và thoải mái
             </Description>
           </div>
         </div>

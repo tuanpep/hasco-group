@@ -6,7 +6,7 @@ export interface IFooterProps {}
 const FooterContainer = styled.div`
   width: 100%;
   padding: 50px 50px;
-  background-color: #000000;
+  background-color: #0f74ba;
   color: #ffffff;
   padding-top: 20px;
 
@@ -28,7 +28,7 @@ export function Footer(props: IFooterProps) {
   return (
     <FooterContainer>
       <div className="line-logo">
-        <img src="/logo-hasco.png" alt="" />
+        <img src="/logo-white.png" alt="" />
       </div>
 
       <div className="contentFooter">

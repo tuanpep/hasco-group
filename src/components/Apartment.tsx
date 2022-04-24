@@ -14,7 +14,7 @@ export interface IApartmentProps {}
 const ApartmentContainer = styled.div`
   width: 100%;
   padding: 70px 0;
-  background-color: #151515;
+  background-color: #0f74ba;
   color: #fdfcfc;
 `;
 
@@ -46,7 +46,7 @@ export function Apartment(props: IApartmentProps) {
   return (
     <ApartmentContainer id="apartment">
       <ApartmentContent>
-        <h2 className="head-title">Thiết kế căn hộ tiện ích</h2>
+        <h2 className="head-title">Thiết kế căn hộ mẫu</h2>
 
         <Swiper
           slidesPerView={1}

@@ -37,17 +37,23 @@ const ButtonContainer = styled.div`
   margin-top: 20px;
 
   button {
-    background-color: #000;
+    background-color: #0f74ba;
     outline: 0;
     color: #fff;
     border: 0;
     padding: 10px 15px;
+    font-weight: bold;
     cursor: pointer;
     font-family: "Roboto Slab", sans-serif;
     text-transform: uppercase;
     font-weight: 500;
+    transition: all 0.3s;
     width: 100%;
     height: 50px;
+
+    &:hover {
+      background-color: #25aae2;
+    }
   }
 `;
 
@@ -65,12 +71,19 @@ export function ContactModal({ isOpen, onClose }: IContactModalProps) {
               fullWidth
               id="filled-required"
               label="Họ và Tên"
+              autoComplete="off"
             />
-            <TextFieldContainer fullWidth id="filled-required" label="Email" />
+            <TextFieldContainer
+              fullWidth
+              id="filled-required"
+              autoComplete="off"
+              label="Email"
+            />
             <TextFieldContainer
               fullWidth
               id="filled-required"
               label="Số điện thoại"
+              autoComplete="off"
             />
           </form>
 

@@ -37,11 +37,6 @@ export const ImageData = {
     },
 
     {
-      url: "17tgQ1DWW0HqIISBTR5EfCfw--6eIiX-h",
-      title: "Fitness & Gym",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Placeat ex sit quod distinctio laboriosam hic quos iustonesciunt facere voluptatibus, odit veritatis voluptas dolorum culpa obcaecati, amet a sed eligendi.",
-    },
-    {
       url: "1BgbfK9FyI9S4y7ul24mm41BAUC6urtvc",
       title: "Sky Yoga",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Placeat ex sit quod distinctio laboriosam hic quos iustonesciunt facere voluptatibus, odit veritatis voluptas dolorum culpa obcaecati, amet a sed eligendi.",
@@ -49,7 +44,7 @@ export const ImageData = {
 
     {
       url: "1DNtdUHFg_j6ifPChTYKHIkVioArWNyDn",
-      title: "Khuôn viên xanh đẹp",
+      title: "Khuôn viên tiện ích ngoài trời",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Placeat ex sit quod distinctio laboriosam hic quos iustonesciunt facere voluptatibus, odit veritatis voluptas dolorum culpa obcaecati, amet a sed eligendi.",
     },
   ],
