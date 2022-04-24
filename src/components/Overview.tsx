@@ -1,4 +1,5 @@
 import * as React from "react";
+import ReactPlayer from "react-player/lazy";
 import styled from "styled-components";
 import { ImageData } from "../data/images";
 import { getGdriverImage } from "../helpers/getGdiverImage";
@@ -96,7 +97,11 @@ export function Overview(props: IOverviewProps) {
         </div>
 
         <div className="right-column">
-          <img src={getGdriverImage(ImageData.overview.img2)} alt="" />
+          <iframe
+            src="https://drive.google.com/file/d/1Pmz738Tl6CMzwVcgBCoVc5ETRifYLR_S/preview"
+            width="100%"
+            height={400}
+          ></iframe>
         </div>
       </OverviewContent>
     </OverviewContainer>

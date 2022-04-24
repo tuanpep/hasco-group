@@ -2,8 +2,6 @@ import * as React from "react";
 import { Link } from "react-scroll";
 import styled from "styled-components";
 
-export interface IHeaderProps {}
-
 const HeaderContainer = styled.div`
   background-color: #ffffff;
   width: 100%;
@@ -103,9 +101,14 @@ const menuList = [
   },
 ];
 
-export function Header(props: IHeaderProps) {
+export interface IHeaderProps {
+  openContactModal: () => void;
+}
+
+export function Header({ openContactModal }: IHeaderProps) {
   return (
     <HeaderContainer>
+      l
       <HeaderContent>
         <Logo src="/logo-hasco.png" />
         <MenuContainer>
@@ -117,7 +120,7 @@ export function Header(props: IHeaderProps) {
         </MenuContainer>
 
         <ButtonContainer>
-          <button>Đăng ký tư vấn </button>
+          <button onClick={openContactModal}>Đăng ký tư vấn </button>
         </ButtonContainer>
       </HeaderContent>
     </HeaderContainer>
