@@ -25,7 +25,7 @@ export const ImageData = {
 
   overview: {
     img1: "19ezKDCq6HC-yZ2stu3GhRQ9Ps_7iSsNU",
-    img2: "1aVGkQOj4vnUX28tM0AzSqwO1f7M3_xkt",
+    img2: "1Pmz738Tl6CMzwVcgBCoVc5ETRifYLR_S",
   },
 
   location: "1UoGw5CC0QaLVbw7sX9Ys5thTWwiiUrTN",
