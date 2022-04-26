@@ -31,7 +31,7 @@ export function HomeCarousel(props: IOverviewProps) {
       <Swiper
         slidesPerView={1}
         modules={[Virtual, Autoplay, EffectFade]}
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        autoplay={{ delay: 7000, disableOnInteraction: false }}
         virtual
         effect="fade"
       >

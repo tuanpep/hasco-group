@@ -1,14 +1,17 @@
 import * as React from "react";
 import styled from "styled-components";
+import { FacebookCircle } from "@styled-icons/boxicons-logos/FacebookCircle";
+import { InstagramAlt } from "@styled-icons/boxicons-logos/InstagramAlt";
+import { Tiktok } from "@styled-icons/fa-brands/Tiktok";
+import { Twitter } from "@styled-icons/boxicons-logos/Twitter";
 
 export interface IFooterProps {}
 
 const FooterContainer = styled.div`
   width: 100%;
-  padding: 50px 50px;
+  padding: 20px;
   background-color: #0f74ba;
   color: #ffffff;
-  padding-top: 20px;
 
   .line-logo {
     display: flex;
@@ -21,6 +24,20 @@ const FooterContainer = styled.div`
 
   .contentFooter {
     display: flex;
+    gap: 40px;
+    justify-content: center;
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .social {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
   }
 `;
 
@@ -32,8 +49,15 @@ export function Footer(props: IFooterProps) {
       </div>
 
       <div className="contentFooter">
-        <div></div>
-        <div></div>
+        <div className="line-2">
+          <p>Theo dõi để nhận những tin tức, khuyến mãi mới nhất!</p>
+          <div className="social">
+            <FacebookCircle size={30} />
+            <InstagramAlt size={30} />
+            <Tiktok size={30} />
+            <Twitter size={30} />
+          </div>
+        </div>
       </div>
     </FooterContainer>
   );

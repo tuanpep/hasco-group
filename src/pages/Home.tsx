@@ -1,9 +1,10 @@
 import * as React from "react";
 import { Apartment } from "../components/Apartment";
 import { Contact } from "../components/Contact";
+import { Details } from "../components/Details";
 import { Highlights } from "../components/Hightlights";
 import { HomeCarousel } from "../components/HomeCarousel";
-import { Interior } from "../components/Interior";
+import InteriorSection from "../components/InteriorSection";
 import { Location } from "../components/Location";
 import { Overview } from "../components/Overview";
 
@@ -17,8 +18,9 @@ export function Home(props: IHomeProps) {
       <Location />
       <Highlights />
       <Apartment />
-      <Interior />
+      <InteriorSection />
       <Contact />
+      <Details />
     </>
   );
 }

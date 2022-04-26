@@ -2,7 +2,9 @@ import * as React from "react";
 import styled from "styled-components";
 import { getGdriverImage } from "../helpers/getGdiverImage";
 
-export interface IInteriorProps {}
+export interface IInteriorProps {
+  data: any;
+}
 
 const Title = styled.h2`
   font-weight: 600;
@@ -43,6 +45,7 @@ const InteriorContainer = styled.div`
       img.living-room {
         width: 100%;
         object-fit: contain;
+        max-height: 600px;
       }
     }
 
@@ -67,7 +70,9 @@ const InteriorContainer = styled.div`
 
       .kitchen {
         width: 60%;
+        min-width: 500px;
         object-fit: contain;
+        max-height: 500px;
       }
     }
   }
@@ -85,6 +90,7 @@ const InteriorContainer = styled.div`
       gap: 30px;
       img {
         width: 70%;
+        max-height: 600px;
       }
 
       .desc {
@@ -97,18 +103,19 @@ const InteriorContainer = styled.div`
       img {
         width: 80%;
         transform: translateY(-60px);
+        max-height: 400px;
       }
     }
   }
 `;
 
-export function Interior(props: IInteriorProps) {
+export function Interior({ data }: IInteriorProps) {
   return (
     <InteriorContainer id="interior">
       <div className="line-1">
         <div className="left">
           <img
-            src={getGdriverImage("1KPX0rDjqODbLawWY8_DjcIVsJyb_igDl")}
+            src={getGdriverImage(data.img1.img)}
             alt=""
             className="living-room"
           />
@@ -116,25 +123,19 @@ export function Interior(props: IInteriorProps) {
         <div className="right">
           <div className="desc">
             <div className="top">
-              <Title>Không gian phòng khách</Title>
+              <Title>{data.img1.title}</Title>
 
-              <Description>
-                Phòng khách là không gian chính của ngôi nhà, là nơi sum họp gia
-                đình
-              </Description>
+              <Description>{data.img1.desc}</Description>
             </div>
 
             <div className="bottom">
-              <Title>Không gian phòng bếp</Title>
+              <Title>{data.img2.title}</Title>
 
-              <Description>
-                Một bữa ăn ngon luôn là mong ước của mỗi gia đình. Không gian
-                phòng ăn đóng vai trò rất quan trọng trong văn hóa Việt
-              </Description>
+              <Description>{data.img2.desc}</Description>
             </div>
           </div>
           <img
-            src={getGdriverImage("1I8KvwdcBDkN0yMzHsFtCHHRPGDUFQ6SH")}
+            src={getGdriverImage(data.img2.img)}
             alt=""
             className="kitchen"
           />
@@ -143,31 +144,20 @@ export function Interior(props: IInteriorProps) {
 
       <div className="line-2">
         <div className="left">
-          <img
-            src={getGdriverImage("121FFeebFXXIa8T4Tl357rGXhswXUqnK8")}
-            alt=""
-          />
+          <img src={getGdriverImage(data.img3.img)} alt="" />
 
           <div className="desc">
-            <Title>Không gian làm việc</Title>
-            <Description>
-              Không gian làm việc hiện đại mang lại nguồn cảm hứng
-            </Description>
+            <Title>{data.img3.title}</Title>
+            <Description>{data.img3.desc}</Description>
           </div>
         </div>
 
         <div className="right">
-          <img
-            src={getGdriverImage("1GCjON7EDYTcbq7bs8MS4TICXDNKAoUdx")}
-            alt=""
-          />
+          <img src={getGdriverImage(data.img4.img)} alt="" />
 
           <div className="desc">
-            <Title>Không gian phòng ngủ</Title>
-            <Description>
-              Những mẫu phòng ngủ của HASCO mang đến cảm giác ấm cúng, gần gũi
-              và thoải mái
-            </Description>
+            <Title>{data.img4.title}</Title>
+            <Description>{data.img4.desc}</Description>
           </div>
         </div>
       </div>

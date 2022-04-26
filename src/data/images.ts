@@ -2,9 +2,7 @@ export const ImageData = {
   // ảnh trang chủ
   carouselOverview: [
     {
-      id: "1rmqXzbXlhORANn3HjHZCRgxJ8obEY-U9",
-      title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Placeat ex sit quod distinctio laboriosam hic quos iustonesciunt facere voluptatibus, odit veritatis voluptas dolorum culpa obcaecati, amet a sed eligendi.",
+      id: '1W-WV55YX7A6Dfop1Ds8M8c8l24rUzn2m'
     },
     {
       id: "1wX1w5_T2ho6WUDA-nknXWWYZ8uxbJQCQ",
